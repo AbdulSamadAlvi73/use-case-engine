@@ -1,0 +1,388 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Lexend', sans-serif;
+}
+a{
+  text-decoration: none !important;
+  color: #000 !important;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* overflow: hidden; */
+
+}
+/* ::selection{
+  color: #fff;
+  background: #d43f8d;
+} */
+
+@media only screen and (max-width: 1200px) {
+  body {
+   align-items: start;
+  }
+  .container-samad{
+    width: 100% !important;
+    padding: 1em !important;
+  }
+  .progress-bar-samad .step-samad .bullet-samad:before,
+.progress-bar-samad .step-samad .bullet-samad:after{
+  right: -12.6vw !important;
+  width: 12.6vw !important;
+}
+}
+@media only screen and (max-width: 557px){
+  form .page-samad .field .specifyerror{
+    text-align: left !important;
+    }
+}
+.container-samad{
+  width: 80%;
+  background: #F7F7F7;
+  text-align: center;
+  border-radius: 5px;
+  padding: 50px 35px 10px 35px;
+}
+.container-samad header{
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.container-samad .title-samad{
+  font-size: 16px;
+  margin-top: -1rem;
+}
+.container-samad .form-outer-samad{
+  width:100%;
+  overflow: hidden;
+}
+.container-samad .form-outer-samad form{
+  display: flex;
+  width: 700%;
+}
+.form-outer-samad form .page-samad{
+    width: 14.3%;
+    transition: margin-left 0.3s ease-in-out;
+}
+.form-outer-samad form .page-samad .title,.prompt-box{
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+.form-outer-samad form .page-samad .field,.form-outer-samad .prompt-box .page-samad .field{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  padding: 0em;
+  padding-top: .3em;
+  padding-bottom: .7em;
+  gap: .7em;
+  text-align: left;
+}
+form .page-samad .field .label,.prompt-box .page-samad .field .label{
+  top: -30px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: left;
+}
+form .page-samad .field .answer{
+  top: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(83, 83, 83);
+  width: 100%;
+}
+form .page-samad .field input[type="text"],.field input[type="email"],.field input[type="password"],.field input[type="number"]{
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-bottom: #000 1px solid;
+  background-color: #F7F7F7;
+  padding:2px 0px ;
+  padding-left: 15px;
+  font-size: 18px;
+}
+form .page-samad .field .specifyerror{
+text-align: right;
+color: red;
+font-size: 0.8rem;
+}
+
+form .page-samad .field select{
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  border: none;
+  border-bottom: #000 1px solid;
+  background-color: #F7F7F7;
+}
+/* form .page-samad .form-check{
+  background-color: #e1e0e0;
+  padding: 0.5rem;
+  border-radius: 1rem;
+} */
+form .page-samad .form-check{
+  margin-bottom: .8em;
+}
+form .page-samad .field .form-check input{
+  border: #000 1px solid;
+}
+form .page-samad .field button,.prompt-box .page-samad .field form button{
+  width: 100%;
+  /* height: calc(100% + 5px); */
+  border: none;
+  /* background: gray; */
+  margin-top: -20px;
+  border-radius: 5px;
+  color: black;
+  border: #000 2px solid;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+  padding:.5rem 0px ;
+}
+form .page-samad .field button:hover,.prompt-box .page-samad .field form button:hover{
+  box-shadow: #000 0px 5px 0px 0px;
+}
+form .page-samad .btns,.prompt-box .page-samad .btns{
+  flex-direction: row !important;
+  gap: .1em !important;
+  padding: 1em 0em !important;
+  margin-top: 1em !important;
+}
+form .page-samad .btns button,.prompt-box .page-samad .btns form button{
+  margin-top: -20px!important;
+}
+form .page-samad .btns button,.prompt-box .page-samad .btns form button a{
+  display: block !important;
+}
+form .page-samad .btns button.prev,.prompt-box .page-samad .btns form button.prev{
+  margin-right: 3px;
+  font-size: 17px;
+}
+form .page-samad .btns button.next-samad,.prompt-box .page-samad .btns form button .next-samad{
+  margin-left: 3px;
+}
+.container-samad .progress-bar-samad{
+  display: flex;
+  margin: 40px 0;
+  user-select: none;
+}
+.container-samad .progress-bar-samad .step-samad{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+/* .container-samad .progress-bar-samad .step-samad p{
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+} */
+.progress-bar-samad .step-samad .bullet-samad{
+  height: 25px;
+  width: 25px;
+  border: 2px solid #3D64EE;
+  display: inline-block;
+  border-radius: 50%;
+  color: #3D64EE;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  background-color: #F7F7F7;
+}
+.progress-bar-samad .step-samad .bullet-samad.active{
+  border-color: #3D64EE;
+  background: #3D64EE;
+}
+.progress-bar-samad .step-samad .bullet-samad span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progress-bar-samad .step-samad .bullet-samad.active span{
+  display: none;
+}
+.progress-bar-samad .step-samad .bullet-samad:before,
+.progress-bar-samad .step-samad .bullet-samad:after{
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -9.6vw;
+  height: 3px;
+  width: 9.6vw;
+  background: #3D64EE;
+}
+.progress-bar-samad .step-samad .bullet-samad.active:after{
+  background: #3D64EE;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.progress-bar-samad .step-samad:last-child .bullet-samad:before,
+.progress-bar-samad .step-samad:last-child .bullet-samad:after{
+  display: none;
+}
+.progress-bar-samad .step-samad p.active{
+  color: #3D64EE;
+  transition: 0.2s linear;
+}
+.progress-bar-samad .step-samad .check{
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.progress-bar-samad .step-samad .check.active{
+  display: block;
+  color: #fff;
+}
+
+.step1-title{
+  font-size: 1.4rem;
+  margin: 3rem 0rem;
+}
+
+/* user-login-start */
+.user-bgr {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  /* background-image: url('../imgs/5.jpg'); */
+  margin: 0 !important;
+  padding: 50px 6% !important;
+  overflow: hidden !important;
+}
+
+.user-bgr .user-login {
+  width: 50%;
+  background-color: #F7F7F7;
+  border: 1px solid #3D64EE;
+  border-radius: 6px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+
+@media screen and (max-width: 600px) {
+  .user-bgr .user-login{
+    width: 100%;
+  }
+}
+
+
+.user-bgr .user-login .user-title {
+  font-weight:600;
+  letter-spacing: 1px;
+  color: #3D64EE;
+  text-align: center;
+}
+
+.user-bgr .user-login form .user-label {
+  font-size: 17px;
+  font-weight: 500;
+  padding-top: 10px;
+  letter-spacing: 0.6px;
+  color: #3D64EE;
+}
+
+.user-bgr .user-login form .user-input {
+  border: 2px solid #3D64EE;
+  font-size: 14.5px;
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  outline: none;
+  color: black;
+}
+
+.user-bgr .user-login form .user-input::placeholder {
+  color: #3D64EE;
+}
+
+.user-bgr .user-login form .user-btn {
+  width: 100%;
+  padding: 7.5px 0;
+  margin-top: 12px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  background-color: #3D64EE;
+  border: 2px solid #3D64EE;
+  border-radius: 3px;
+  transition: all 0.5s linear;
+  color: whitesmoke;
+}
+
+.user-bgr .user-login form .user-btn:hover {
+  /* box-shadow: inset 0 -5px 7px #FFDC73; */
+  transform: translateY(-3px);
+}
+/* user-login-end */
+
+.container-samad .title-samad-prompt1{
+  font-size: 25px;
+  margin-top: -1rem;
+}
+
+.container-samad .prompt1{
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.container-samad .copy_clipboard{
+  font-size: 16px;
+  color: rgb(3, 3, 3);
+}
+
+.fa-edit {
+  color: #3D64EE;
+  cursor: pointer;
+}
+
+
+#loading-bar {
+  height: 8px; /* Increased height for better visibility */
+  background: linear-gradient(45deg,#3D64EE, #00000032, #3D64EE);
+  background-size: 400% 400%;
+  animation: gradient 3s linear infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: width 0.5s;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
